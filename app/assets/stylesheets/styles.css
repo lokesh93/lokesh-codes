@@ -2,7 +2,7 @@
 .background-image{
    height: 600px;
    background-size: cover;
-   background: #ad1457;
+   background: #00e676;
 }
 
 .background2{
@@ -15,16 +15,21 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 .home-navigation{
-  background-color: #78002e;
+  background-color: #00b248;
   padding: 1% 0%;
 }
 .navigation-links{
       margin: 0px;
 }
+.home-item{
+  margin-top: 0% ! important;
+}
 .navigation-item{
   margin: 0px 30px;
-  padding: 15px;
+  /*padding: 15px;*/
   display: inline-block;
+  vertical-align: top;
+  margin-top: 1%;
 }
 .navigation-item-login{
   margin: 0px 35% 0% 0%;
@@ -35,6 +40,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
+  font-size: 18px;
 }
 .slogan{
     font-size: 28px;
@@ -53,13 +59,13 @@ body{
     padding: 3% 0%;
 }
 
-a:hover { 
+/*a:hover { 
     color: white;
     border:solid white;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
-}
+}*/
 
 .slogan-descript-2{
     font-size: 24px;
@@ -134,9 +140,19 @@ h3 {
 }
 
 
-.portfolio{
-  height: 300px;
+.portfolio-1, .portfolio-2{
+  height: 400px;
   text-align: center;
+  overflow: hidden;
+  width: 90%;
+  display: inline-block;
+}
+
+.left-arrow-1, .right-arrow-1, .left-arrow-2, .right-arrow-2 {
+  width: 4%;
+  display: inline-block;
+  height: 250px;   
+  vertical-align: bottom;
 }
 
 span.slogan-descript-2 {
@@ -151,8 +167,8 @@ span.slogan-descript-2 {
   /*background-color: gray;*/
   color: white;
   border-radius:20px;
-  width:30%;
-  height: 250px;
+  width:150px;
+  height: 150px;
   text-align: center;
   font-size: 20px;
   position: relative;
@@ -166,6 +182,7 @@ span.slogan-descript-2 {
   background-repeat: no-repeat;
   border-radius: 40px;
   padding: 10px;
+  height: 150px;
 }
 
 .command-wear{
@@ -182,6 +199,8 @@ span.slogan-descript-2 {
   width:100%;
   border-radius: 40px;
   padding: 10px;
+  height: 150px;
+
 }
 
 .tiles-text{
@@ -189,6 +208,10 @@ span.slogan-descript-2 {
    display: block;  
    line-height: 250px; 
    visibility: hidden;
+}
+
+.right-arrow:hover {
+  cursor: pointer;
 }
 
 
@@ -283,7 +306,7 @@ span.slogan-descript-2 {
 
 .submit{
   width: 30%;
-  background: #f50057;
+  background: #00b248;
   color: #ffffff;
   border-radius: 20px;
   font-size: 30px;
@@ -304,6 +327,169 @@ span.slogan-descript-2 {
   border: solid;
   padding: 10px 10px;
   border-radius: 10px;
+}
+
+.scroller {
+  width: 3000px; 
+  height: 100%;
+}
+
+.scroller-2 {
+  width: 4000px; 
+  height: 100%;
+}
+
+.slider-images {
+  margin-top: 4%;
+  margin-right: 20%;
+}
+
+.pca-hold {
+  width: 300px;
+  margin: 0% 35%;
+}
+.pca-hold .pca-main {
+  display: block;
+  position: relative;
+  background-color: #c8c8c8;
+  height: 180px;
+  border: 10.8px solid #2d2d2d;
+  border-top-left-radius: 7.2px;
+  border-top-right-radius: 7.2px;
+}
+.pca-hold .pca-main:after {
+  content: '';
+  position: absolute;
+  top: -8.9px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  width: 5.7px;
+  height: 5.7px;
+  background-color: #959595;
+  border-radius: 100%;
+}
+.pca-hold .pca-main:before {
+  content: '';
+  opacity: 0;
+}
+.pca-hold .pca-inner {
+  display: block;
+}
+.pca-hold .pca-sub {
+  display: block;
+  text-align: center;
+}
+.pca-hold .pca-sub .pca-top {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 24px;
+  background-color: #e8e8e8;
+  border-bottom-left-radius: 7.2px;
+  border-bottom-right-radius: 7.2px;
+  opacity: 1;
+  z-index: 2;
+}
+.pca-hold .pca-sub .pca-top:after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzAuMyIgaGVpZ2h0PSIxNjAiIHZpZXdCb3g9IjE5IDUgMTMwLjMgMTYwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDE5IDUgMTMwLjMgMTYwIj48dGl0bGU+TGF5ZXIgMTwvdGl0bGU+PHBhdGggZD0iTTEyNy44IDkwYy4yIDI0LjIgMjEuMiAzMi4zIDIxLjUgMzIuNC0uMi42LTMuNCAxMS41LTExLjEgMjIuOC02LjcgOS43LTEzLjYgMTkuNS0yNC41IDE5LjctMTAuNy4yLTE0LjItNi40LTI2LjQtNi40cy0xNi4xIDYuMi0yNi4yIDYuNmMtMTAuNS40LTE4LjUtMTAuNS0yNS4zLTIwLjMtMTMuNy0xOS45LTI0LjItNTYuMS0xMC4xLTgwLjYgNy0xMi4yIDE5LjUtMTkuOSAzMy4xLTIwLjEgMTAuMy0uMiAyMC4xIDcgMjYuNCA3IDYuMyAwIDE4LjItOC42IDMwLjYtNy4zIDUuMi4yIDE5LjkgMi4xIDI5LjMgMTUuOS0uOC4zLTE3LjUgMTAuMS0xNy4zIDMwLjNtLTIwLjEtNTkuNWM1LjYtNi44IDkuMy0xNi4yIDguMy0yNS41LTguMS4zLTE3LjggNS40LTIzLjYgMTIuMS01LjIgNi05LjcgMTUuNi04LjUgMjQuNyA5IC44IDE4LjItNC41IDIzLjgtMTEuMyIvPjwvc3ZnPg==);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.pca-hold .pca-sub .pca-mid {
+  display: block;
+  text-align: center;
+  height: 24px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.pca-hold .pca-sub .pca-mid .pca-part {
+  display: block;
+  margin: 0 auto;
+  border-bottom: 30px solid #cdcdcd;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0;
+  width: 90px;
+}
+.pca-hold .pca-sub .pca-bot {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 9px;
+  margin: 0 auto;
+  background-color: #e8e8e8;
+  border-radius: 6px 6px 0 0;
+  opacity: 1;
+  z-index: 2;
+}
+
+.dev-icons{
+  cursor: pointer;
+  padding: 10px;
+}
+.dev-icons:active {
+  border: solid;
+  border-radius: 20px;
+}
+
+.active-state {
+  border: solid;
+  border-radius: 20px;
+  background: #00e676;
+}
+
+.dev-descript{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  display: none;
+}
+
+footer {
+  background-color: #00b248;
+  color: #ffffff;
+}
+
+
+.b-ball {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 4s;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+  position: relative;
+}
+
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px; transform:rotate(0deg)}
+    25%  {left:0px; top:-140px; transform:rotate(90deg)}
+    50%  {left:0px; top:0px; transform:rotate(180deg)}
+    75%  {left:0px; top:-120px; transform:rotate(270deg)}
+    100% {left:0px; top:0px; transform:rotate(360deg)}
+}
+
+@keyframes example {
+     0%   {left:0px; top:0px; transform:rotate(0deg)}
+    25%  {left:0px; top:-140px; transform:rotate(90deg)}
+    50%  {left:0px; top:0px; transform:rotate(180deg)}
+    75%  {left:0px; top:-120px; transform:rotate(270deg)}
+    100% {left:0px; top:0px; transform:rotate(360deg)}
 }
 
 .carousel-inner > .item > img,
